@@ -1,6 +1,7 @@
 resource "aws_security_group" "kobold-test-sg" {
   
-  name        = "kobold-test-sg"
+  name        = var.name-aws-security-group
+  description = "Security group de teste"
 
 #Acesso via SSH
   ingress {
